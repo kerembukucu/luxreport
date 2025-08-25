@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Shield, Video, Zap, LineChart, BadgeCheck, Lock, BellRing, Smartphone, Cpu, Cloud, Building2, Factory, Banknote, Warehouse, Camera, CircleHelp } from "lucide-react";
+import fabrika from "./assets/fabrika.jpg";
 
 export default function LuxReportLanding() {
   const [scrolled, setScrolled] = useState(false);
@@ -88,7 +89,7 @@ export default function LuxReportLanding() {
                 <div className="aspect-[7/7] max-w-[320px] md:max-w-[360px] overflow-hidden rounded-xl border border-white/10 bg-neutral-950 mx-auto">
                   <div className="relative h-full w-full">
                     <img
-                      src="/src/assets/fabrika.jpg"
+                      src={fabrika}
                       alt="camera feed"
                       className="h-full w-full object-cover opacity-80"
                     />
