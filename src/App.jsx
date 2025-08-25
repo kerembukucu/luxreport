@@ -7,6 +7,7 @@ export default function LuxReportLanding() {
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     window.addEventListener("scroll", onScroll);
+    document.title = "LuxReport";
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
